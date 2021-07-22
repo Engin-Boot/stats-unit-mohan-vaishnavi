@@ -32,9 +32,9 @@ namespace Statistics
 			
 			
 		return new Stats{
-			min=min;
-			max=max;
-			average=average;
+			min=min,
+			max=max,
+			average=average
 		};	
         }
     }
