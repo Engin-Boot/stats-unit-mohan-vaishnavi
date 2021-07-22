@@ -35,7 +35,7 @@ namespace Statistics
 			min=min;
 			max=max;
 			average=average;
-		}	
+		};	
         }
     }
 }
