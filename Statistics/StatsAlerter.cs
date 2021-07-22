@@ -28,7 +28,8 @@ namespace Statistics
         private bool checkIfMaxAboveThreshold(List<float> numbers)
         {
             StatsComputer statsComputer = new StatsComputer();
-            float max = numbers.Sort()[numbers.Count-1];
+            numbers.Sort()
+            float max = numbers[numbers.Count-1];
             return max > this.maxThreshold;
         }
     }
