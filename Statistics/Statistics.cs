@@ -7,12 +7,12 @@ namespace Statistics
     {
         public Stats CalculateStatistics(List<float> numbers) {
             //Implement statistics here
-            	Stats _stats = new Stats();
-			
+            		
+			double average, min, max;
 			if (numbers.Count==0){
-				_stats.average = Double.NaN;
-				_stats.min = Double.NaN;
-				_stats.max = Double.NaN;	
+				average = Double.NaN;
+				min = Double.NaN;
+				max = Double.NaN;	
 			
 			}
 			
@@ -24,14 +24,18 @@ namespace Statistics
 					{
 						sum += num;		
 					}
-				_stats.average = sum/numbers.Count;
-				_stats.min = numbers[0];
-				_stats.max = numbers[numbers.Count-1];		
+				average = sum/numbers.Count;
+				min = numbers[0];
+				max = numbers[numbers.Count-1];		
 			
 			}
 			
 			
-		return _stats;	
+		return new Stats{
+			min=min;
+			max=max;
+			average=average;
+		}	
         }
     }
 }
