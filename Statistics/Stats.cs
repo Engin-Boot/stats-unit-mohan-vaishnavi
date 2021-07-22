@@ -3,9 +3,9 @@ using System;
 
 public class Stats
     {
-		private double average;
-		private double min;
-		private double max;
+	public float min { get; set; }
+        public float average { get; set; }
+        public float max { get; set; }
 		
     }
 
